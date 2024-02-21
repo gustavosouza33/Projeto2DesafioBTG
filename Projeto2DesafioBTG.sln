@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto2DesafioBTG", "Projeto2DesafioBTG\Projeto2DesafioBTG.csproj", "{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC0663E-4989-4CF1-A490-2AFBD4FDA0DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBA80367-2520-4191-892B-19EF4FB8BCD0}
+	EndGlobalSection
+EndGlobal

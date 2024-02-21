@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto2DesafioBTG.Views.IncluirClientePage"
+             xmlns:mvvm="clr-namespace:Projeto2DesafioBTG.ViewModels"
+             Shell.NavBarIsVisible="False"
+             x:DataType="mvvm:IncluirClienteViewModel"
+             BackgroundColor="#f3f2fa">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border StrokeShape="RoundRectangle 0,16,0,16" WidthRequest="200" HorizontalOptions="Start"  Padding="16"
+                Grid.Column="0" VerticalOptions="FillAndExpand" BackgroundColor="{DynamicResource Primary}">
+            <Image Source="btg_logo.png" HeightRequest="200" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center"/>
+        </Border>
+        <VerticalStackLayout Padding="32" Spacing="32" Grid.Column="1" VerticalOptions="Center" WidthRequest="500">
+            <Label  Text="Cadastro" TextColor="{DynamicResource Primary}"
+                    VerticalOptions="Center" Style="{DynamicResource Titulo2}"
+                    HorizontalOptions="Center" />
+
+            <VerticalStackLayout>
+                <Label Text="Primeiro nome" Style="{DynamicResource TituloAlternativo4}" Margin="4,0,0,2" 
+                       Grid.Row="0" Grid.Column="0" TextColor="{DynamicResource Gray600}" />
+                <Border StrokeShape="RoundRectangle 16" Stroke="{DynamicResource Gray600}" Grid.Row="1" Grid.Column="0"
+                        BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="8,0,8,0" >
+                    <HorizontalStackLayout>
+                        <Label Text="person" FontFamily="MaterialIconsOutlined-Regular" FontSize="24"  VerticalOptions="Center"
+                               TextColor="{DynamicResource Gray600}" />
+                        <Entry Placeholder="Primeiro nome" WidthRequest="400" Text="{Binding PrimeiroNome}" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Label Text="Último nome" Style="{DynamicResource TituloAlternativo4}" Margin="4,0,0,2" Grid.Row="0" 
+                       Grid.Column="1" TextColor="{DynamicResource Gray600}" />
+                <Border StrokeShape="RoundRectangle 16" Stroke="{DynamicResource Gray600}" BackgroundColor="White" 
+                        Grid.Column="1" Grid.Row="1"  Padding="8,0,8,0" HorizontalOptions="FillAndExpand">
+                    <HorizontalStackLayout>
+                        <Label Text="person" FontFamily="MaterialIconsOutlined-Regular" FontSize="24"  VerticalOptions="Center"
+                               TextColor="{DynamicResource Gray600}" />
+                        <Entry Placeholder="Último nome" WidthRequest="400" Text="{Binding UltimoNome}" VerticalOptions="Center"  />
+                    </HorizontalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Idade" Style="{DynamicResource TituloAlternativo4}" Margin="4,0,0,2" 
+                       TextColor="{DynamicResource Gray600}" />
+
+                <Border StrokeShape="RoundRectangle 16" Stroke="{DynamicResource Gray600}" BackgroundColor="White" Padding="8,0,8,0" >
+                    <HorizontalStackLayout>
+                        <Label Text="calendar_month" FontFamily="MaterialIconsOutlined-Regular" FontSize="24"  VerticalOptions="Center"
+                               TextColor="{DynamicResource Gray600}" />
+                        <Entry Placeholder="Idade" Text="{Binding Idade}" MaxLength="3"  Keyboard="Numeric" 
+                               VerticalOptions="Center" WidthRequest="400"/>
+                    </HorizontalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Label Text="Endereço" Style="{DynamicResource TituloAlternativo4}" Margin="4,0,0,2" 
+                       TextColor="{DynamicResource Gray600}" />
+                <Border StrokeShape="RoundRectangle 16" Stroke="{DynamicResource Gray600}" BackgroundColor="White" Padding="8,0,8,0" >
+                    <HorizontalStackLayout>
+                        <Label Text="home" FontFamily="MaterialIconsOutlined-Regular" FontSize="24" VerticalOptions="Center"
+                           TextColor="{DynamicResource Gray600}" />
+                        <Entry Placeholder="Endereço" WidthRequest="400" Text="{Binding Endereco}" VerticalOptions="Center"  />
+                    </HorizontalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+            <Button Text="Adicionar" Command="{Binding ComandoAdicionar}" />
+            <Button Text="Voltar" BackgroundColor="{StaticResource Gray100}" TextColor="{StaticResource Primary}" Command="{Binding ComandoVoltar}" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
